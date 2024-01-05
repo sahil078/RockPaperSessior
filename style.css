@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+.header{
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+}
+.header h1{
+    padding-top: 2vh;
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-style: oblique;
+}
+
+.img{
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    cursor: pointer;
+}
+#scisser{
+    height: 35vh;
+}
+#rock , #paper , #scisser{
+    border-radius: 15%;
+}
+#scisser:hover{
+    border: 4px solid crimson;
+}
+#paper:hover{
+    border: 4px solid rgb(0, 84, 252);
+}
+#rock:hover{
+    border: 4px solid chartreuse;
+}
+
+#play{
+    padding-top: 8vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+}
+.play-1 , .play-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.player1 , .player2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: crimson;
+    padding-left: 2.2vw;
+}
+.p-score{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 2vw;
+}
+.c-score{
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+#win-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+#win-box h1{
+    padding: 0.5vh 2vw;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+}
